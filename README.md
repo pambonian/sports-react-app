@@ -26,7 +26,7 @@
 ```                     
 
 # Data
-
+```
 const box = {
     name: 'Patrick Brennan',
     message: 'Hello this is a placeholder message designed to take up space and present itself as if it were an actual sports content post'
@@ -53,7 +53,7 @@ const SportsMessagesPayload = [{
     message: 'Lqgend is currently at a 3:7 KD ratio in CTF'
 },
 ]
-
+```
 # Test Snippet
 ```test('renders questions tag', () => {
   render(<Inbox />);
