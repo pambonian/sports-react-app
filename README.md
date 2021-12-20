@@ -17,13 +17,13 @@
 
 # Component Code Snippet
 
- <div className="post" key={this.props.index} />
+ ```<div className="post" key={this.props.index} />
         <div className="inbox-messages" id="inbox-messages">
                 <div v-for="(msg, index) in messages" className="card">
                     <div className="card-content">
                         <div className="msg-header">
                             <span className="msg-from"><small>Player: {this.props.person}</small></span>
-                            
+```                     
 
 # Data
 
