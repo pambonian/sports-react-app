@@ -8,37 +8,37 @@ test('renders dashboard tag', () => {
 });
 
 test('renders customers tag', () => {
-  render(<Forum />);
+  render(<Inbox />);
   const spanElement = screen.getByText(/Folders/i);
   expect(spanElement).toBeInTheDocument();
 });
 
 test('renders authentication tag', () => {
-  render(<Forum />);
+  render(<Inbox />);
   const spanElement = screen.getByText(/Compose/i);
   expect(spanElement).toBeInTheDocument();
 });
 
 test('renders payments tag', () => {
-  render(<Forum />);
+  render(<Inbox />);
   const spanElement = screen.getByText(/Starred/i);
   expect(spanElement).toBeInTheDocument();
 });
 
 test('renders transfers tag', () => {
-  render(<Forum />);
-  const spanElement = screen.getByText(/SNIPEDRONE/i);
+  render(<Inbox />);
+  const spanElement = screen.getByText(/Logout/i);
   expect(spanElement).toBeInTheDocument();
 });
   
 test('renders balance tag', () => {
-  render(<Forum />);
-  const spanElement = screen.getByText(/Cratos/i);
+  render(<Inbox />);
+  const spanElement = screen.getByText(/Account/i);
   expect(spanElement).toBeInTheDocument();
 });
   
 test('renders questions tag', () => {
-  render(<Forum />);
+  render(<Inbox />);
   const spanElement = screen.getByText(/Profile/i);
   expect(spanElement).toBeInTheDocument();
 }); 
