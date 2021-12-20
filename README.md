@@ -59,7 +59,8 @@ const SportsMessagesPayload = [{
   render(<Inbox />);
   const spanElement = screen.getByText(/Profile/i);
   expect(spanElement).toBeInTheDocument();
-}); ```
+});
+```
 
 ![Untitled](https://user-images.githubusercontent.com/92609479/146842097-f58037cd-7076-483e-968a-3b62c7aad827.png)
 
