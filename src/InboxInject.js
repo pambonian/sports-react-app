@@ -17,7 +17,7 @@ class InboxInject extends Component {
                 <span className="msg-subject"><strong id="fake-subject-1">{}</strong></span>
             </div>
             <div className="msg-snippet">
-                <p id="fake-snippet-1">{box.message}{this.props.message}</p>
+                <p id="fake-snippet-1">{this.props.message}</p>
             </div>
         </div>
         );
