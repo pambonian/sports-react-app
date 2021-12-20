@@ -13,7 +13,7 @@ class InboxInject extends Component {
                 <div v-for="(msg, index) in messages" className="card">
                     <div className="card-content">
                         <div className="msg-header">
-                            <span className="msg-from"><small>{this.props.name}From: Name Here {this.props.name}</small></span>
+                            <span className="msg-from"><small>{this.props.name}From: {this.props.person}</small></span>
                             <span className="msg-timestamp"></span>
                             <span className="msg-attachment"><i className="fa fa-paperclip"></i></span>
                         </div>
