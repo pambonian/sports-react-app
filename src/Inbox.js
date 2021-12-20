@@ -3,6 +3,26 @@ import './Inbox.css';
 
 import InboxInject from './InboxInject'
 
+// class DirectMessage extends Component {
+//     render() {
+//         return (
+//             <div className="card-content">
+//                         <div className="msg-header">
+//                             <span className="msg-from"><small>{box.name}</small></span>
+//                             <span className="msg-timestamp"></span>
+//                             <span className="msg-attachment"><i className="fa fa-paperclip"></i></span>
+//                         </div>
+//                         <div className="msg-subject">
+//                             <span className="msg-subject"><strong id="fake-subject-1">{}</strong></span>
+//                         </div>
+//                         <div className="msg-snippet">
+//                             <p id="fake-snippet-1">{box.message}{this.props.message}</p>
+//                         </div>
+//                     </div>
+//         )
+//     }
+// }
+
 const box = {
     name: 'Patrick Brennan',
     message: 'Hello this is a placeholder message designed to take up space and present itself as if it were an actual sports content post'
@@ -81,7 +101,7 @@ class Inbox extends Component {
 	        </div>
         </div>
     </nav>
-    {displayPlayerMessages}
+    {/* {displayPlayerMessages} */}
     <div className="columns" id="mail-app">
         <aside className="column is-2 aside hero is-fullheight">
             <div>
@@ -115,9 +135,11 @@ class Inbox extends Component {
                 </div>
                 
             </div>
-
+            
             <div className="inbox-messages" id="inbox-messages">
+            {/* <DirectMessage title="test" date="December 20, 2021"/> */}
                 <div v-for="(msg, index) in messages" className="card">
+                
                     <div className="card-content">
                         <div className="msg-header">
                             <span className="msg-from"><small>From:{box.name}{this.props.name}</small></span>
@@ -131,6 +153,7 @@ class Inbox extends Component {
                             <p id="fake-snippet-1">{box.message}{this.props.message}</p>
                         </div>
                     </div>
+                    {displayPlayerMessages}
                 </div>
                 
             </div>
